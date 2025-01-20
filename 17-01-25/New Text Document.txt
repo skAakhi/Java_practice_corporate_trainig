@@ -1,0 +1,13 @@
+Concepts:
+
+1.Use of final and super keyword.
+
+2.Explanation on Inheritance and use of extends keyword [How the inherited method can be overriden in child class] 
+
+3.Use of abstract keyword and abstaract classes[How abstarct methods and concrete methods are created in classes]
+
+4.Explanation on why cant we create object for abstract classes 
+
+5.Explanation on abstraction and while creating object how to achive abstraction[ briefing about type and reference to achive abstraction]
+
+6.Assigned a task on abstraction

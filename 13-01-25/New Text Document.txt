@@ -1,0 +1,69 @@
+Methods:
+
+1.Static[4 ways]------>Can call with calss name itself 
+
+2.Instance[4 ways]---->Should call with object
+
+
+Syntax:
+
+access_modifier  static/instamce return_type  MethodName(parameters.../Without parametres)
+{
+
+}
+
+
+Classifications of methods:
+parameters     Returntype
+
+0                0---------------->ex:  void add();
+0                1----------------->ex:  int add(){ return value; } ;
+1                0----------------->ex:  void add(int a,int b);
+1                1----------------->ex:  int add(int a,int b){ return value; } ;
+
+
+
+Note:WhenEver any method is returning something during method call we have to store the output in a variable of that return type.
+
+ 
+
+
+
+
+Code explanation for MethodTwo and MethodThree:
+
+
+MethodTwo:
+
+Methods like add(), sub(int x, int y), mul(), and div(int a, int b) are invoked on the current instance (this) without explicitly using this.
+For example, within add(), the call to sub(10,30); implicitly refers to this.sub(10,30);, meaning it uses the current instance's method.
+MethodThree:
+
+Methods are invoked on a new instance of MethodThree created within each method call.
+For instance, within add(), the call new MethodThree().sub(10,30); creates a new MethodThree object and then calls its sub() method.
+
+
+
+
+
+
+Implications:
+
+State Management:
+
+In MethodTwo, since all method calls operate on the same instance, any instance variables (x and y) 
+modified within one method will reflect those changes in subsequent method calls.
+
+In MethodThree, each method call operates on a new instance with its own separate state. 
+Therefore, changes to instance variables in one method won't affect other method calls, as they're working with different object instances.
+
+
+
+
+
+
+Performance:
+
+MethodTwo is more efficient in terms of memory and processing because it reuses the same instance for all method calls.
+MethodThree incurs additional overhead by creating a new instance for each method call, which can be less efficient, especially if the constructor performs complex operations.
+

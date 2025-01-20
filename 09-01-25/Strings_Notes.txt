@@ -1,0 +1,279 @@
+Strings:
+
+It is a kind of data type but not a primitive data type , because its unique behaviour, mostly often say that it is literal.
+
+
+
+Creating String:[Two ways]
+
+1.String s1="Hello";----------------->s1 will refer String pool
+
+2.String s2=new String("Hello");----->s2 will refer object
+
+
+
+
+Example:[Why it is called as literal]
+
+Refer: [StringOne.java] file 
+
+
+
+
+String related methods:
+
+1.CharAt()
+
+2.equals()
+
+3.equalsIgnoreCase()
+
+4.contains()
+
+5.startsWith()
+
+6.endsWith()
+
+7.trim()
+
+8.split(\\)
+
+9.length()
+
+10.replace()
+
+11.replaceAll()
+
+12.isEmpty()------>If length is 0 then will give true as output
+
+13.isBlank()------>If there is no content will give true as a output.
+
+14.indexOf()
+
+15.lastIndexOf()
+
+16.substring()
+
+17.class.valueOf()
+
+18.tocharArray()
+
+19.toLowerCase()
+
+20.toUpperCase()
+
+
+
+
+Note:
+
+replaceAll() method:
+
+Signature: public String replaceAll(String regex, String replacement)
+
+Purpose: Replaces all substrings that match a regular expression (regex) with the specified replacement string.
+
+Key point: It treats the first argument as a regular expression, which means you can use regex patterns like \d, \w, \s, etc., for pattern matching.
+
+
+
+
+Assignment:
+
+1.Write a java program to count the number of characters in a string
+input: java is super     output: 13
+
+
+2.Write a java program to count the number of words in a string
+input: java is super     output: 3
+
+
+3.Write a java program to count the total  number of occurences of given charaters in a string
+input: Hello world   target character: l
+
+Output : 3
+
+
+
+4.Write  a java program to reverse a string
+input: java is super   output: repus si avaj
+
+
+5.Write a java program to remove all starting  and ending spaces from a string.
+input:   Hello World  
+output:Hello World
+
+
+6.Write a java program to reverse each word of a given string
+input:java is easy    output:avaj si ysae
+
+
+7.Write a java program to modify the string in the following patteren
+
+::::Change odd words to upperCase and Reverse the even words
+
+input: This is a test string!!    output:THIS si A tset STRING!!
+
+
+
+
+8.Write a java program to find the count of upperCase letters,lowerCase letters,digits and special characters in a given string
+
+
+
+
+9.WAP to find out first repeated and non repeated charaters in a given string
+input:  java is easy
+
+output: Firstrepeatedcharater-a  firstnonrepeatedcharacter-j
+
+
+
+10.write a java program to create an array using words at even positions in a string
+
+input:java is keka easy and awesome  output:{"is","keka","and"}
+
+
+11.WAP to find maximum length word in a given string if two words are same length then return first occuring word of max length.
+
+input:Hello how are you moooooon   output: moooooon
+input:hello how are you reddy      output:hello
+
+
+
+12.Compare two strings,if the characters in string 1 are present in string 2, then it should be printed as sunch in output
+   else'+' should be printed in output
+
+input1:New York    input2:NWYR   output:N+w+y+r+
+
+
+
+13.Given the first name and last name, print the last name and first followed by "," and first charater of the first name
+
+input1: (First Name): Steve    input2(Last Name):jobs
+
+output:jobs,s
+
+
+
+14.WAP to print the file name extension in the console
+
+input(File Name):Passport.jpg  output:jpg
+input(File Name):Pancard.png   output:png
+
+
+
+
+15.WAP to verify whether the given string is palindrome or not
+
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Online Shopping system project instructions :
+
+Project Breakdown:
+1. Product Class
+The Product class will represent a product available for sale in the store.
+Attributes:
+•	productName (String): The name of the product.
+•	productId (String): A unique ID for the product.
+•	price (double): The price of the product.
+•	quantityAvailable (int): The number of items available in the store.
+Methods:
+•	getDetails(): Returns a string with the product's details (name, ID, price, and quantity).
+•	updateQuantity(int quantity): Decreases the product’s quantity when a purchase is made.
+
+
+
+
+2. ShoppingCart Class
+The ShoppingCart class represents a user's shopping cart, where products can be added and removed.
+Attributes:
+•	cartItems[] (array of Product objects): An array that holds the products added to the cart.
+Methods:
+•	addToCart(Product product): Adds a product to the shopping cart.
+•	removeFromCart(String productId): Removes a product from the cart by its ID.
+•	viewCart(): Displays all products in the cart, along with the total price.
+•	checkout(): Displays the total price and finalizes the checkout process.
+
+
+
+
+
+3. User Class
+The User class represents an individual user of the store.
+Attributes:
+•	username (String): The username of the user.
+•	shoppingCart (ShoppingCart): An object that holds the user's shopping cart.
+Methods:
+•	addItemToCart(Product product): Adds a product to the user’s shopping cart.
+•	removeItemFromCart(String productId): Removes a product from the user’s cart.
+•	viewShoppingCart(): Views the products in the user’s shopping cart.
+•	checkout(): Completes the checkout process.
+
+
+
+
+
+4. Store Class (Main Program)
+The Store class is responsible for managing products and users. It allows products to be viewed, added, and removed from the store's inventory.
+Attributes:
+•	products[] (array of Product objects): An array that stores all the products available for sale in the store.
+Methods:
+•	addProduct(Product product): Adds a product to the store’s inventory.
+•	removeProduct(String productId): Removes a product from the store.
+•	viewProducts(): Displays all available products.
+•	createUser(String username): Creates a new user.
+•	login(String username): Logs in an existing user based on their username.
+
+
+
+
+Instructions:
+Step 1: Create the Product Class
+1.	Define the Product class with the following attributes: productName, productId, price, and quantityAvailable.
+2.	Create a constructor that initializes the attributes.
+3.	Write a method called getDetails() that returns a string containing the product’s name, ID, price, and available quantity.
+4.	Write a method called updateQuantity(int quantity) that reduces the product’s available quantity when a product is purchased.
+
+
+Step 2: Create the ShoppingCart Class
+1.	Define the ShoppingCart class. Create an array cartItems[] to hold up to 10 products.
+2.	Write a method called addToCart(Product product) to add a product to the shopping cart.
+3.	Write a method called removeFromCart(String productId) to remove a product from the shopping cart by its product ID.
+4.	Write a method called viewCart() to display the products in the shopping cart and calculate the total price.
+5.	Write a method called checkout() that displays the total price and confirms the checkout.
+
+Step 3: Create the User Class
+1.	Define the User class with the attributes username and shoppingCart.
+2.	Write methods for adding items to the cart, removing items, and viewing the cart. Use the methods from the ShoppingCart class.
+3.	Write a checkout() method that prints the total price and simulates the completion of the purchase.
+
+Step 4: Create the Store Class
+1.	Define the Store class with an array products[] to store products available in the store.
+2.	Write a method called addProduct(Product product) to add products to the store.
+3.	Write a method called removeProduct(String productId) to remove products by their ID.
+4.	Write a method called viewProducts() that displays all the available products in the store.
+5.	Write a method called createUser(String username) to create a new user.
+6.	Write a method called login(String username) to log in an existing user and assign them to the store.
+
+Step 5: Implement the Main Logic
+1.	In the main() method, create a few sample products and add them to the store.
+2.	Create a user, add products to their shopping cart, view the cart, and simulate checkout.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+    

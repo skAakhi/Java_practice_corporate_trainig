@@ -1,0 +1,160 @@
+
+
+
+Constructors: [To allocate memory before]   and this keyword
+
+
+Syntax:
+
+access_modifier className(parameters.....)
+{
+//body
+}
+
+
+
+Rules:
+
+1.Class name should be same as your constructor name
+
+2.There should have no return type
+
+3.In case of method call constructor with this.MethodName keyword
+
+4.In case of constructor call with only this keyword
+
+5.Circular constructor will not be possible
+
+
+
+
+
+
+
+Types:
+
+1.Default constructor
+
+2.Parameterized constructor
+
+
+
+
+
+Example:
+
+
+1.
+class ConstructorOneDotOne {
+    int a;
+    int b;
+    ConstructorOneDotOne()
+    {  
+        this.a=10;
+        this.b=20;
+        System.out.println(a+b);
+    }
+    
+    public void print()
+    {
+        System.out.println(a+b);
+    }
+    public static void main(String[] args) {
+      ConstructorOneDotOne e = new ConstructorOneDotOne();
+        e.print();
+    }
+}
+
+
+
+
+
+2.
+
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+// class Main {
+//     int a;
+//     int b;
+//     Main(int a,int b)
+//     {  
+//         a=a;
+//         b=b;
+//         System.out.println(a+b);
+//     }
+    
+//     public void print()
+//     {
+//         System.out.println(a+b);
+//     }
+//     public static void main(String[] args) {
+//       Main e = new Main(10,20);
+//       //Main e1 = new Main(20,20);
+//         e.print();
+//         //e1.print();
+//     }
+// }
+
+
+
+
+
+// class Main {
+//     int a;
+//     int b;
+//     Main(int a,int b)
+//     {  
+//       this(10,20,30); 
+//       this.a=a;
+//       this.b=b;
+//         System.out.println(a+b);
+//     }
+//     Main(int a ,int b ,int c)
+//     {  
+//         this.print(40,40);
+//         System.out.println(a+b+c);
+//     }
+    
+//     public void print(int a,int b)
+//     {
+//         System.out.println(a+b+" Print method");
+//     }
+//     public static void main(String[] args) {
+//       Main e = new Main(10,20);
+//     }
+// }
+
+
+
+//The code you've provided will throw a compilation error because of circular constructor calls.
+
+//When the constructor Main(int a, int b, int c) is called, it calls print(), which calls the constructor Main(int a, int b), causing an infinite recursion of constructor calls.
+
+class Main {
+    int a;
+    int b;
+    Main(int a,int b)
+    {  
+        System.out.println(a+b);
+    }
+    Main(int a ,int b ,int c)
+    {  
+        this.print(1,2,3,4);
+        System.out.println(a+b+c);
+    }
+    
+    public void print(int a,int b,int c,int d)
+    {
+        this(10,20);
+        System.out.println(a+b+c+d);
+    }
+    public static void main(String[] args) {
+      Main e = new Main(1,2,3);
+    }
+}
+
+
+
+
+  
