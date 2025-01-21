@@ -1,0 +1,28 @@
+
+Concepts:
+
+1.Explanation on interfaces 
+
+2.How implements and extends keywords uses [ For interface to interface , class to class , interface to class , interface to abstract class , abstract class to class]
+
+3.Implementing multiple interfaces with class 
+
+4.use of super keyword while calling its parent interface within class
+
+5.What are the consequences to face if we declare access modifiers [public , private ] while invoking from its child class
+  and how to avoid it.
+
+6.Assigned task on interfaces [To check work progress]
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+p\Java_practice\20-01-25>javac one.java
+
+C:\Users\HP\Desktop\Java_practice\20-01-25>javap one
+Compiled from "one.java"
+interface one {
+  public static final int a;
+  public abstract void x();
+}
