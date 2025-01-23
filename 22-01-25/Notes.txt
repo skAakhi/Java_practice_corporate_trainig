@@ -1,0 +1,27 @@
+Note:javap java.util.List----->Enter it in command prompt to view all its respective methods
+
+
+
+Collections:
+
+Note: Collection is super inheritance 
+
+1.List---------->LinkedList,ArrayList
+
+2.Set----------->HashSet,TreeSet
+
+
+List:
+
+ArrayList: [You can store any type of values]
+
+Example:
+
+Collection c = new ArrayList();
+
+c.add(10);
+c.add(10);
+c.add(10);
+c.add(10);
+c.add(10);
+c.add(10);
