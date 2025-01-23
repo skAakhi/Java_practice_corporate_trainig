@@ -47,11 +47,11 @@ System.out.println("All items removed");
 
 
 
-public void fetch()
+public void fetch()  throws IndexOutOfBoundsException
 {
 if(l.isEmpty())
 {
-System.out.println("There is no such elements to delete");
+throw new IndexOutOfBoundsException("There is no elements please check again ");
 }
 else{
 for(String i : l)
