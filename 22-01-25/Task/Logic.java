@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 class Logic 
 {
-
 List<String> l = new ArrayList<>();
 Scanner sc = new Scanner(System.in);
 
@@ -57,9 +56,23 @@ else{
 for(String i : l)
 System.out.print(i+" ");
 }
-}
 
 }
+
+public void closeResource()
+{
+try{
+sc.close();
+}
+finally{
+System.out.println("Scanner closed in Logic class ");
+}
+}
+
+
+}
+
+
 
 
 
