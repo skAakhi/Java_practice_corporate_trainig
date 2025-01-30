@@ -1,0 +1,50 @@
+
+
+Java networking :
+
+It is used to write programs that executes across multiple devices through connected by a network.
+
+
+javat.net [Package]
+
+-->TCP [ Reliable / follow the sequence order to send data packets ]
+-->UDP [ Wireless / Doesnt follow any order fot sending data packets ]
+
+
+URL : [ Uniform resource locator ]
+
+Order : protocol://DomineName.com(domine) (or) address : PortNumber/index.html
+
+Example 1 : Http://www.youtube.com/
+
+Example 2 : Http://www.youtube.com/64/index.html
+
+
+Note : URL class provides a simple concise API to access information across the internet using URL.
+
+
+
+
+
+
+Inlet address : [class]
+
+It represents an [ip address] and provides method to get the [host name]--->It encapsulates both [ip address] and [host name].
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
