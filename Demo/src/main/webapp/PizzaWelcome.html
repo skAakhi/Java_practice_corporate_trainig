@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Delight - Welcome</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: white;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Header */
+        .header {
+            background-color: #ff4500;
+            padding: 15px;
+            font-size: 24px;
+            font-weight: bold;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Navigation */
+        .navbar {
+            background-color: #222;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 20px;
+            padding: 10px 15px;
+            transition: 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #ff6347;
+            border-radius: 5px;
+        }
+
+        /* Dropdown styles */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ff6347;
+        }
+
+        /* Welcome Section */
+        .welcome {
+            padding: 50px 20px;
+            font-size: 28px;
+            background: url('pizza-banner.jpg') no-repeat center center/cover;
+            height: 300px;
+            color: #fff;
+            text-shadow: 2px 2px 4px black;
+        }
+
+        /* Pizza Section */
+        .pizzas {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .pizza-card {
+            background: #333;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .pizza-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover; /* Ensures the images fit properly */
+            border-radius: 10px;
+        }
+
+        .pizza-card h3 {
+            color: #ffcc00;
+            margin: 10px 0;
+        }
+
+        .pizza-card button {
+            background: #ff4500;
+            border: none;
+            padding: 10px 15px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .pizza-card button:hover {
+            background: #e63900;
+        }
+
+        /* Footer */
+        .footer {
+            background: #222;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="header">Welcome to Pizza Delight</div>
+
+    <div class="navbar">
+        <a href="#about">About Us</a>
+        <a href="#all-pizzas">All Pizzas</a>
+
+      
+        <div class="dropdown">
+            <a href="javascript:void(0)">Sort by Category</a>
+            <div class="dropdown-content">
+                <a href="#chicken">Chicken Pizza</a>
+                <a href="#veg">Veg Pizza</a>
+                <a href="#paneer">Paneer Pizza</a>
+            </div>
+        </div>
+
+        <!-- Login Dropdown -->
+        <div class="dropdown">
+            <a href="javascript:void(0)">Login</a>
+            <div class="dropdown-content">
+                <a href="PizzaCustomerLogin.jsp">Customer Login</a>
+                <a href="PizzaAdminLogin.jsp">Admin Login</a>
+            </div>
+        </div>
+
+        <a href="PizzaRegister.jsp">Register</a>
+        <a href="#contact">Contact Us</a>
+    </div>
+
+    <div class="welcome">
+        <h1>Delicious Pizzas, Made Just for You!</h1>
+        <p>Order your favorite pizza with just a click.</p>
+    </div>
+
+    <h2 id="all-pizzas">All Pizzas</h2>
+    
+    <div class="pizzas">
+        <div class="pizza-card" id="chicken">
+            <img src="https://th.bing.com/th/id/OIP.Z2wOxuZTN2aBBhNcWuY4SAHaEJ?w=300&h=180&c=7&r=0&o=5&pid=1.7" alt="Margherita Pizza">
+            <h3>Margherita Pizza</h3>
+            <p>Classic cheese and tomato perfection!</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="pizza-card" id="veg">
+            <img src="https://th.bing.com/th/id/OIP.YfbgFqEtAMmf8TEmaxVQkAHaD4?w=345&h=180&c=7&r=0&o=5&pid=1.7" alt="Pepperoni Pizza">
+            <h3>Pepperoni Pizza</h3>
+            <p>Loaded with spicy pepperoni and cheese.</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="pizza-card" id="paneer">
+            <img src="https://th.bing.com/th/id/OIP.etGT1IdnXiFYVM8KbpLILwHaJQ?w=184&h=230&c=7&r=0&o=5&pid=1.7" alt="BBQ Chicken Pizza">
+            <h3>BBQ Chicken Pizza</h3>
+            <p>BBQ sauce, chicken, and fresh onions.</p>
+            <button>Add to Cart</button>
+        </div><br>
+        
+      
+        <div class="pizza-card">
+            <img src="https://th.bing.com/th/id/OIP.RyF12CjDGrG3YngqLLEc2gHaHa?w=184&h=184&c=7&r=0&o=5&pid=1.7" alt="Veggie Pizza">
+            <h3>Veggie Pizza</h3>
+            <p>Fresh veggies with tangy tomato sauce.</p>
+            <button>Add to Cart</button>
+        </div>
+        
+         <div class="pizza-card">
+            <img src="https://files.oaiusercontent.com/file-XSTeK2gPgR1BRj5R7kSCpn?se=2025-02-09T06%3A42%3A30Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D619e455a-955a-44f7-b994-908a115c8ba2.webp&sig=qkKvsCsWteeKwIgF0G5z64M3dhpMbRpdC0bmGNrJGko%3D" alt="Margherita Pizza">
+            <h3>Peppy panner Pizza</h3>
+            <p>Classic panner and onion slice perfection!</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="pizza-card">
+            <img src="https://files.oaiusercontent.com/file-LmAJPqyQC7w2EKTKKv2XLP?se=2025-02-09T06%3A46%3A14Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3De8087619-bac8-47fd-94cb-76e82e3dbbe8.webp&sig=Apo4dswZygJUwoe06pN/crwsWKCSKYSkCuvNnS9x1bk%3D" alt="Pepperoni Pizza">
+            <h3>Farmhouse Pizza</h3>
+            <p>Loaded with spicy pepperoni and cheese.</p>
+            <button>Add to Cart</button>
+        </div>
+        
+        
+        <div class="pizza-card">
+            <img src="https://files.oaiusercontent.com/file-NNmgUjrh3VyqX8e1a9CXhF?se=2025-02-09T06%3A48%3A09Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D05f5f4f2-1251-4190-b393-8ee0decac85b.webp&sig=2cmf9jsOkG0iXXrLLa1KVTuHJ9Zxevi6So7x3XE0HUw%3D" alt="BBQ Chicken Pizza">
+            <h3>Cheez corn Pizza</h3>
+            <p>BBQ sauce, with extra cheez and fresh onions.</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="pizza-card">
+            <img src="https://th.bing.com/th/id/OIP.dTiZBtIZa72V09VqtW1aigHaE8?w=219&h=180&c=7&r=0&o=5&pid=1.7" alt="Veggie Pizza">
+            <h3>Mexican green Pizza</h3>
+            <p>Fresh veggies with tangy ghee roast sauce.</p>
+            <button>Add to Cart</button>
+        </div>
+        
+    </div>
+
+    <h2 id="about">About Us</h2>
+    <p>We serve the best pizzas with high-quality ingredients. Our mission is to bring smiles through delicious pizzas!</p>
+
+    <h2 id="contact">Contact Us</h2>
+    <p>Email: skaakhib29@gmail.com | Phone: +91 7207182919</p>
+
+    <div class="footer">
+        <p>Â© 2025 Pizza Delight | Made with â¤ï¸ for pizza lovers.</p>
+    </div>
+
+</body>
+</html>

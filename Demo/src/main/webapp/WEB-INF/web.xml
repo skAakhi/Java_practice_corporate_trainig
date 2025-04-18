@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" version="6.0">
+ 
+ <!--
+ <servlet>
+ <servlet-name>abc</servlet-name>
+ <servlet-class>com.Servlet2.ComOne</servlet-class>
+ 
+ </servlet>
+ 
+ 
+ <servlet-mapping>
+ 
+ <servlet-name>abc</servlet-name>
+ <url-pattern>/xyz</url-pattern>
+ 
+ </servlet-mapping>
+ -->
+ 
+ 
+ 
+ 
+ 
+ <!--
+ <servlet>
+ 
+ <servlet-name>abc</servlet-name>
+ <servlet-class>com.AddServlet</servlet-class>
+ 
+ <init-param>
+ <param-name>name</param-name>
+ <param-value>Afzal pro</param-value>
+ </init-param>
+ 
+ </servlet>
+ 
+ 
+ <servlet-mapping>
+ 
+ <servlet-name>abc</servlet-name>
+ <url-pattern>/add</url-pattern>
+ 
+ </servlet-mapping>
+ 
+ 
+ 
+ 
+ <servlet>
+ 
+ <servlet-name>abc1</servlet-name>
+ <servlet-class>com.Servlet1.SqServlet</servlet-class>
+ 
+ </servlet>
+ 
+ 
+ <servlet-mapping>
+ 
+ <servlet-name>abc1</servlet-name>
+ <url-pattern>/sq</url-pattern>
+ 
+ </servlet-mapping>
+ 
+ 
+ 
+ 
+ <context-param>
+ <param-name>name</param-name>
+ <param-value>Aakhib</param-value>
+ </context-param>
+ 
+ 
+ <context-param>
+ <param-name>phone</param-name>
+ <param-value>IQ Brand</param-value>
+ </context-param> 
+ 
+ 
+ 
+ 
+ -->
+ 
+ 
+ 
+ 
+</web-app>

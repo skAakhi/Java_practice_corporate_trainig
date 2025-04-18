@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student CRUD Operations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #2E1A47;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .btn-container {
+            margin-top: 20px;
+        }
+
+        .btn {
+            display: block;
+            width: 200px;
+            background: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 10px auto;
+            border-radius: 5px;
+            transition: 0.3s;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #45a049;
+        }
+
+        .delete-btn {
+            background: #ff4d4d;
+        }
+
+        .delete-btn:hover {
+            background: #cc0000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Student CRUD Operations</h1>
+
+        <div class="btn-container">
+            <a href="addStudent.html" class="btn">➕ Add Student</a>
+            <a href="viewstudent.html" class="btn">📋 View Students</a>
+            <a href="updateStudent.html" class="btn">✏ Update Student</a>
+            <a href="deleteStudent.html" class="btn delete-btn">❌ Delete Student</a>
+        </div>
+    </div>
+
+</body>
+</html>
